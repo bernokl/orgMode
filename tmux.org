@@ -1,0 +1,16 @@
+* Using tmux
+** Lifting text using tmux
+In tmux, copy-mode allows you to temporarily halt the operation of the terminal so that you can move through the text that has been sent to the terminal.
+
+You can move around text in the terminal using standard emacs movement keys C-a C-e M-f, arrow keys PgUp PgDn
+You can follow the sequence in the table below to copy text from the tmux buffer and
+paste it else where.
+
+| tmux shortcut | Description                                                              |
+|---------------+--------------------------------------------------------------------------|
+| C-b [         | Enter copy-mode, you will see a lines count in the top right hand corner |
+| C-spc         | Create a mark at point, movement keys will extende the region            |
+| M-w           | copy region to buffer                                                    |
+| q             | Exit copy-mode                                                           |
+| C-b C-]       | Paste contents of tmux buffer                                            |
+|               |                                                                           |
